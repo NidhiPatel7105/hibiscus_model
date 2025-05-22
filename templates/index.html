@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibiscus Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>🌺 Hibiscus Classification 🌺</h1>
+
+        <input type="file" id="fileInput">
+        <button id="uploadBtn">📷 Upload & Predict</button>
+
+        <h3>OR</h3>
+        <button id="captureBtn">📸 Capture Live Image</button>
+
+        <div class="result-container" id="resultContainer"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
